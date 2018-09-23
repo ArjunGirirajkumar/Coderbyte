@@ -8,30 +8,23 @@ void KaprekarsConstant(int num) {
     tn = (num % 100) / 10 ;
     h = (num / 100) % 10 ;
     t = num / 1000 ;
-    int rank[3] ;
-    if (u >= tn)
+}
+
+void ascending(int a, int b, int c, int d)
+{
+    int digit[3], rank[3] ;
+    digit[0] = a ; digit[1] = b ; digit[2]= c ; digit[3] = d ;
+    int i ;
+    for (i = 0 ; i == 4 ; i++)
     {
-        if (u >= h)
-        {
-            if (u >= t)
-            {
-                rank[3] = u ;
-            }
-            rank[2] = u ;
-        }
-        rank[1] = u ;
+        if (digit[i] >= b)
     }
-    else
-    {
-        rank[0] = u ;
-    }
-    cout << rank[3] ;
 }
 
 int main() { 
   
   // keep this function call here
-  KaprekarsConstant(gets(stdin));
+  ascending(3,4,2,1) ;
   return 0;
     
 } 
